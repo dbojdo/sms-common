@@ -1,7 +1,7 @@
 <?php
 namespace Webit\Api\SmsCommon\Message;
 
-class Reciver implements ReciverInterface {
+class Recipient implements RecipientInterface {
 	/**
    * @var string
 	 */

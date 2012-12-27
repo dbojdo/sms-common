@@ -1,7 +1,7 @@
 <?php
 namespace Webit\Api\SmsCommon\Message;
 
-interface ReciverInterface {
+interface RecipientInterface {
 	public function getPhoneNo();
 }
 ?>

@@ -11,9 +11,9 @@ class Sms implements SmsInterface {
 	protected $from;
 	
 	/**
-   * @var array<ReciverInterface>
+   * @var array<RecipientInterface>
 	 */
-	protected $recivers = array();
+	protected $Recipients = array();
 	
 	/**
    * @var string
@@ -41,14 +41,14 @@ class Sms implements SmsInterface {
 		return $this->from;
 	}
 	
-	public function addReciver(ReciverInterface $reciver) {
-		if(!in_array($reciver, $this->recivers)) {
-			$this->recivers[] = $reciver;
+	public function addRecipient(RecipientInterface $Recipient) {
+		if(!in_array($Recipient, $this->Recipients)) {
+			$this->Recipients[] = $Recipient;
 		}
 	}
 	
-	public function getRecivers() {
-		return $this->recivers;
+	public function getRecipients() {
+		return $this->Recipients;
 	}
 	
 	/**

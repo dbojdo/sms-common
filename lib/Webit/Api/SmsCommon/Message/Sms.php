@@ -1,6 +1,6 @@
 <?php
 namespace Webit\Api\SmsCommon\Message;
-class Sms {
+class Sms implements SmsInterface {
 	const ENCODING_UTF8 = 'utf-8';
 	const ENCODING_CP1250 = 'windows-1250';
 	const ENCODING_ISO88592 = 'iso-8859-2';

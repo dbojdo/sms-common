@@ -1,7 +1,7 @@
 <?php
-use Webit\Api\SmsCommon\Error\Error;
-
 namespace Webit\Api\SmsCommon\Sender;
+
+use Webit\Api\SmsCommon\Error\Error;
 
 class Response {
 	protected $success = true;
